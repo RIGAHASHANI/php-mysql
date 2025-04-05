@@ -29,9 +29,9 @@
 <body>
     <table>
         <thead>
-            <th>Id<th>
-            <th>Name<th>  
-            <th>Username<th>
+            <th>Id</th>
+            <th>Name</th>  
+            <th>Username</th>
             <th>Email</th>    
         </thead>  
         
