@@ -1,4 +1,4 @@
-<?php 
+<?php
     require 'config.php';
 
     if(isset($_POST['submit']))
@@ -19,7 +19,8 @@
             if($insertSQL->rowCount()> 0){
                 $data = $insertSQL->fetch();
                 if(password_verify($password, $data['password'])){
-                    $_SESSION['username']= $data['username']
+                    $_SESSION['username']= $data['username'];
+                    header("Location:dashboard.php");
                 }else{
                     echo "Password incorrect";
                     header("refresh:2 url=signin.php");
@@ -29,5 +30,8 @@
             }
         }
     }
+
+
+
 
 ?>
